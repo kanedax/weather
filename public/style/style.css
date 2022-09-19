@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+}
+.search{
+    margin-top: 10vh;
+}
+
+.search-input{
+    width: 30vw;
+    text-align: center;
+    border: unset;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.514);
+    padding: 10px;
+    outline: unset;
+    font-size: 14px;
+}
+
+.date-info{
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 23px;
+}
+
+::placeholder{
+    color: black;
+}
+
+input{
+    background: transparent;
+}
+
+.weather-status{
+    margin-top: 5vh;
+    width: 20vw;
+    height: 15vh;
+    background: transparent;
+    border-radius: 5px;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-situation{
+    margin-top: 5vh;
+    font-size: 30px;
+}
+
+.back_cold{
+    background-image:url(/assets/images/cold.jpg);
+}
+.back_warm{
+    background-image:url(/assets/images/warm.jpg);
+}
+.back_hot{
+    background-image:url(/assets/images/hot.jpg);
+}
+.back_usual{
+    background-image:url(/assets/images/usual.jpg);
+}
+
+.font_cold{
+    color: rgb(0, 0, 0);
+}
+.font_warm{
+    color: rgb(255, 196, 0);
+}
+.font_hot{
+    color: rgb(255, 0, 0);
+}
+.font_usual{
+    color: rgb(28, 81, 196);
+}
