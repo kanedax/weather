@@ -23,13 +23,14 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.514);
     padding: 10px;
     outline: unset;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .date-info{
-    margin-top: 5vh;
+    margin-top: 10vh;
     text-align: center;
     font-size: 23px;
+
 }
 
 ::placeholder{
@@ -40,24 +41,58 @@ input{
     background: transparent;
 }
 
-.weather-status{
-    margin-top: 5vh;
-    width: 20vw;
-    height: 15vh;
-    background: transparent;
-    border-radius: 5px;
-    font-size: 32px;
+.weather-info{
+    width: 55vw;
+    margin-top: 8vh;
+    font-size: 1.2vw;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    transition: all ease 1s;
+}
+
+.weather-status{
+    width: 12vw;
+    height: 7vh;
+    background-color: rgba(240, 248, 255, 0.322);
+    text-align: center;
+    border-radius: 7px;
+    line-height: 7vh;
+}
+
+.weather-humidity{
+    width: 12vw;
+    height: 7vh;
+    background-color: rgba(240, 248, 255, 0.322);
+    text-align: center;
+    border-radius: 7px;
+    line-height: 7vh;
+
+}
+
+.weather-wind{
+    width: 12vw;
+    height: 7vh;
+    background-color: rgba(240, 248, 255, 0.322);
+    text-align: center;
+    border-radius: 7px;
+    line-height: 7vh;
+
 }
 
 .weather-situation{
-    margin-top: 5vh;
-    font-size: 30px;
+    width: 12vw;
+    height: 7vh;
+    background-color: rgba(240, 248, 255, 0.322);
+    text-align: center;
+    border-radius: 7px;
+    line-height: 7vh;
 }
 
+.title{
+    margin-top: 8vh;
+}
 .back_cold{
     background-image:url(/assets/images/cold.jpg);
 }
@@ -75,11 +110,20 @@ input{
     color: rgb(0, 0, 0);
 }
 .font_warm{
-    color: rgb(255, 196, 0);
+    color: rgb(0, 110, 255);
 }
 .font_hot{
-    color: rgb(255, 0, 0);
+    color: rgb(0, 172, 29);
 }
 .font_usual{
-    color: rgb(28, 81, 196);
+    color: rgb(255, 94, 0);
+}
+
+.title i{
+    font-size: 5vw;
+}
+
+.weather-info i {
+    margin-left: 2vh;
+    font-size: 2vw;
 }
